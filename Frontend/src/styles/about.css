@@ -1,0 +1,35 @@
+.title{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(53, 22, 82);
+    color: white;
+    width: 200px; 
+    border-radius: 5px;
+    margin: 5px 200px;
+    
+}
+.last{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 2, 64);
+    color: white;
+    width: 100px; 
+    border-radius: 5px;
+    margin: 5px 50px;
+    cursor: pointer;
+    
+}
+.contentt{
+    text-align: left;
+    justify-content: left;
+    align-items:flex-start;
+    color: black;
+    width: 800px; 
+    border-radius: 5px;
+    margin: 5px 200px;
+}
+.containerr{
+    margin: 150px 5px 50px;  
+}

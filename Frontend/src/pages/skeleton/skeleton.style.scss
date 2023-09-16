@@ -1,0 +1,15 @@
+.skeleton-container{
+    position:relative;
+    min-height: 100vh;
+    padding-bottom:80px;
+    .skeleton-content{
+        padding-top:30px;
+    }
+    .skeleton-footer{
+        position:absolute;
+        width:100%;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+}

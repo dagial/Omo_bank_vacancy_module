@@ -1,0 +1,40 @@
+.common-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top:2em;
+.common-content{
+    width:600px;
+    box-shadow:2px 2px 5px rgb(0,0,0,.16),-2px -2px 5px rgb(0,0,0,.16);
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    border-radius:10px;
+    padding:20px;
+    .common-image{
+        width:200px;
+    }
+    .common-input-container{
+        margin-block:3em;
+        .common-input-items{
+            margin-block-end:2em;
+        }
+        .common-input-items:last-child{
+            margin-bottom:0px;
+        }
+        
+    }  
+    .common-text-container{
+        margin-block:5px;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        font-family:"Montserrat";
+        div{
+            margin-block:5px;
+        }
+    }
+}
+
+
+}

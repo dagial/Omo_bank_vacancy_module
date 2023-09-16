@@ -1,0 +1,58 @@
+$primary:#0092CB;
+$secondary: #707070;
+.nav-container-scroll{
+    position:fixed;
+    padding-left:10%;
+    top:0;
+    left:0;
+    right:0;
+    height:50px;
+    background-color:white;
+    z-index:999;
+    box-shadow:0 3px 5px rgb(0,0,0,0.16);
+    animation:ScrollAnimation .5s ease;
+    width:100%;
+    li{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .nav-logo{
+        width:100px;
+    }    
+    .main-nav-container{
+        position: absolute;
+        bottom:30%;
+        margin-inline:15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .main-nav-list{
+            display:flex;
+            align-items: center;
+            .nav-list-item{
+                font-size: 1em;
+                margin-inline:25px;
+                font-family:'Montserrat';
+                a{
+                    color:$primary;
+                    &:hover{
+                        color:#dd9933;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+@keyframes ScrollAnimation {
+
+    from{
+        transform:translateY(-50px)
+    }
+    to{
+        transform: translateY(0);
+    }
+}

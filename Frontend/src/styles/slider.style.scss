@@ -1,0 +1,24 @@
+.slider-container{
+    display:flex;
+    background-color:#FAFAFA;
+    flex-direction: column;
+    align-items: center;
+    .slider-components{
+        width:100%;
+    }
+    .slider-radio{
+        margin:10px;
+        input{
+            
+            appearance: none;
+            width:15px;
+            height:15px;
+            border:1px solid #707070;
+            border-radius:50%;
+            background-color:#EFEFEF;
+            &:checked{
+                background-color: white;
+            }
+        }
+    }
+}

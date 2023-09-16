@@ -1,0 +1,88 @@
+$primary:#0092CB;
+$secondary: #FAFAFA;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    .jobs-container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: flex-start;
+        min-width: 100%;
+        min-height: 100vh;
+        font-family: 'DM Sans', sans-serif;
+        .jobs-body {
+            display: grid;
+            grid-template-columns: .25fr 1fr;
+            width: 100%;
+            .jobs-main-content {
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 40px 150px 50px 30px;
+                .pag-req {
+                    display: flex;
+                    flex-direction: row;
+                    width: 60%;
+                    justify-content: space-between;
+                }
+                .pagination {
+                  display: flex;
+                  justify-content: center;
+                  list-style: none;
+                  padding: 0;
+                  margin-top: 20px;
+                  margin-bottom: 20px;
+                  align-self: center;
+                  li {
+                    margin: 0 0.5rem;
+                    cursor: pointer;
+                    &.disabled {
+                      a {
+                        color: #ccc;
+                        cursor: not-allowed;
+                        pointer-events: none;
+                      }
+                    }
+                    &.active {
+                        background-color: #0092CB;
+                        color: #fff;
+                    }
+                    a {
+                      color: #333;
+                      text-decoration: none;
+                      padding: 0.5rem 1rem;
+                      border-radius: 0.25rem;
+                      border: 1px solid #ccc;
+                      transition: all 0.3s ease-in-out;
+                      &.active {
+                        background-color: #0092CB;
+                        color: #fff;
+                    }
+                      &:hover {
+                        background-color: #eee;
+                      }
+                    }
+                  }
+                }
+                .request-new-button {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    min-height: fit-content;
+                    min-width: fit-content;
+                    padding: 8px 20px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    background: $primary;
+                    color: white;
+                    border: none;
+                    align-content: center;
+                    box-shadow:0 3px 5px rgb(0,0,0,0.16);
+                }
+            }
+        }
+    }
+}    

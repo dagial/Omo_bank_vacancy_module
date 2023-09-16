@@ -1,0 +1,36 @@
+$primary:#0092CB;
+$secondary: #FAFAFA;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    .recruiter-home-container {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: flex-start;
+        min-width: 100%;
+        min-height: 100vh;
+        font-family: 'DM Sans', sans-serif;
+        .home-body {
+            display: grid;
+            grid-template-columns: .25fr 1fr;
+            width: 100%;
+            .recruiter-main-content {
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 40px 150px 50px 30px;
+                .recruiter-display {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    padding: 50px 0px 50px 0px;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}    

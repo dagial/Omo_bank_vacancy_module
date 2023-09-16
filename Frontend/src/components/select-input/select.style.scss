@@ -1,0 +1,67 @@
+.input-flex{
+    align-items:baseline;
+    select{
+        display:none;
+    }
+    .select{
+        width:250px;
+        border:1px solid black;
+        font-family:"Montserrat";
+        padding:5px 10px;
+        border-radius:5px;
+    
+
+        .radio-button{
+            display:none;
+        }
+        .selected-container{
+            position:relative;
+            .select-icon{
+                font-size:1.3em;
+                position:absolute;
+                right:1%;
+                transition:200ms ease-out transform;
+            }
+
+        }
+        .selectable-container{
+            margin-bottom:5px;
+            font-family:"Montserrat";
+            
+            label{
+                position:relative;
+                &:after{
+                    content:'';
+                    position:absolute;
+                    bottom:-2px;
+                    left:0;
+                    height:1px;
+                    width:120%;
+                    transform:scaleX(0);
+                    background-color:black;
+                    transition:50ms linear;
+                }
+                &:hover:after{
+                    transform:scaleX(1)
+                }
+            }
+        }
+        .selectable-container:first-child{
+            margin-top:10px;
+        }
+        .selected{
+            display:inline-block;
+            position:relative;
+            font-size:20px;
+            color:#070707;
+            cursor:pointer;
+        
+        }
+        
+        .select-icon-reverse{
+            transform:rotate(180deg)
+        }
+        
+    }
+
+}

@@ -1,0 +1,40 @@
+.button{
+
+    font-family:"Montserrat";
+    font-size:1.2rem;
+    color:white;
+    background-color:#0092CB;
+    padding:10px 30px;
+    border:1px solid #0092CB;
+    &:hover{
+        background-color: white;
+        color:#0092CB;
+    }
+}
+.button-radius{
+    @extend .button;
+    border-radius:25px;
+}
+.button-outline{
+    @extend .button;
+    background-color:white;
+    padding:5px 15px;
+    font-size:.9em;
+    color:#0092CB;
+    font-weight:400;
+    &:hover{
+        border-color:white;
+        cursor:pointer;
+    }
+}
+
+.button-next{
+    @extend .button;
+    color:#0092CB;
+    background-color: white;
+    border:0;
+    &:hover{
+        cursor:pointer;
+        
+    }
+}

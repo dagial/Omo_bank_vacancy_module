@@ -1,0 +1,18 @@
+.regi-skeleton-container{
+    display:flex;
+    align-items:center;
+    width:100%;
+    margin-bottom:2px;
+    box-shadow: 0 5px 4px -2px rgb(0,0,0,.15);
+    .regi-skeleton-logo{
+        width:150px;
+    }
+    .regi-skeleton-header{
+        align-self:center;
+        margin:0 auto;
+        font-size:2em;
+        font-family:"Montserrat";
+        color:#0092CB;
+    }
+
+}

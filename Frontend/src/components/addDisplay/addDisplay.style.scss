@@ -1,0 +1,51 @@
+.addDisplay-container{
+    width:100%;
+    margin-top:5px;
+    .addDisplay-colum{
+        max-height:40px;
+        max-width:100px;
+        overflow:hidden;
+    }
+    table{
+        width:95vw;
+        border-collapse:collapse;
+        text-align: center;
+       tr{
+        border-block:1px solid #707070;
+        color:#707070;
+        font-size:.9em;
+        font-family:"Quicksand";
+       }
+       tr:first-child{
+        font-family:"Quicksand";
+        
+        color:#0092CB;
+        font-size:1.1em;
+       }
+       th{
+       
+        padding-block:10px;
+        font-weight:500;
+       }
+       .addDisplay-delete{
+        
+        #delete{
+            color:red;
+            font-size:1.2em;
+            margin-inline:3px;
+            &:hover{
+                font-size:1.3em;
+                cursor:pointer;
+            }
+        }
+        #edit{
+            color:rgb(12, 196, 252);
+            font-size:1.2em;
+            &:hover{
+                font-size:1.3em;
+                cursor:pointer;
+            }
+        }
+       }
+    }
+}

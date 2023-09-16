@@ -1,0 +1,127 @@
+$primary: #0092CB;
+
+* {
+	box-sizing: border-box;
+	.slideshow-container {
+		max-width: 90%;
+		display: inline-flex;
+		align-items: center;
+		.slider {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			min-width: 100%;
+			max-width: 100%;
+			max-height: 70ev;
+			margin-bottom: 20px;
+			animation: Slider .5s backwards;
+			animation-fill-mode: backwards;
+			.text-container {
+				width: 50%;
+		        display: flex;
+		        margin-top: 70px;
+		        flex-direction: column;
+		        align-items: center;
+		        justify-content: center;
+		        font-family: "DM Sans";
+		        color: $primary;
+		        margin-left: 10px;
+		        .text-header {
+		            font-size: 5em;
+		            margin-block: -5px;
+		        }
+		        .slid {
+		        	font-size: 4.4em;
+		        }
+		        .text {
+		            margin-block: 10px;
+		            display: flex;
+		            flex-direction: column;
+		            align-items: center;
+		            font-size: 1.5em;
+		            p {
+		                margin: 10px;
+		            }
+		            .get-started-button {
+			            width: 130px;
+			            height: 50px;
+					    box-shadow:0 3px 5px rgb(0,0,0,0.16);
+			            margin-block: 20px 5px;
+			            font-family: "Poppins";
+			            font-size: 1.1rem;
+			            padding: 10px;
+			            color: $primary;
+			            background-color: #FAFAFA;
+			            transition: 0.3s ease;
+			            animation-fill-mode: forwards;
+			            border: 2px solid $primary;
+			            border-radius: 5px;
+			            &:hover {
+			                color: white;
+			                background-color: $primary;
+			                cursor: pointer;
+			            }
+
+			        }
+		        }
+			}
+			img {
+				max-width: 50%;
+			}
+		}
+		.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			margin-top: -30px;
+			color: $primary;
+			font-weight: bold;
+			font-size: 50px;
+			tansition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+			align-self: flex-start;
+			opacity: 0.7;
+			display: none;
+			&:hover {
+				opacity: 2;
+				color: white;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+		}
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+	}
+	.dots {
+		text-align: center;
+		position: sticky;
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+			&:hover {
+				background-color: #717171;
+			}
+		}
+	}
+	.active {
+		background-color: #717171;
+	}
+}
+
+@keyframes Slider {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,36 @@
+.footer-container{
+    position: relative;
+    height:80px;
+    width:100%;
+    padding: 15px;
+    bottom: 0;
+    left: 0;
+    background-color: #EFEFEF;
+    li{
+        list-style:none;
+    }
+    a{
+        text-decoration:none;
+    }
+    .nav-small-list{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        .nav-small-items{
+            margin-inline:10px;
+            a{
+                color:#707070;
+            }
+        }
+    }
+    .copyRights{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-family:"Montserrat";
+        color:#707070;
+        .footer-owner{
+            color:black;
+        }
+    }
+}

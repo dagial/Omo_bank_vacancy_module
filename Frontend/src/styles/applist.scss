@@ -1,0 +1,50 @@
+$primary:#0092CB;
+$secondary: #707070;
+
+.applications-container {
+	.applications-all {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-row-gap: 50px;
+		grid-column-gap: 10px;
+		.application-box {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			.app-link {
+				text-decoration: none;
+				color: inherit;
+				.application-content {
+					width: 95%;
+					display: flex;
+					align-items: center;
+					gap: 20px;
+					.applicant-img-container {
+						width: 25%;
+						.applicant-photo {
+							width: 100%;
+						}
+					}
+					.application-text-content {
+						display: flex;
+						flex-direction: column;
+						text-decoration: none;
+						color: inherit;
+						p {
+							color: $secondary;
+						}
+					}
+				}
+			}
+
+		}
+	}
+	
+}
+.app-loading {
+	color: $primary;
+	font-size: 100px;
+	margin-top: 70px;
+	margin-left: 300px;
+	animation: Loading-spin infinite 0.5s linear;
+}

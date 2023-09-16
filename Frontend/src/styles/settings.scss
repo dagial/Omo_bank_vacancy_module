@@ -1,0 +1,135 @@
+$primary:#0092CB;
+$secondary: #FAFAFA;
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    .settings-container {
+        display: flex;
+        flex-direction: column;
+        background-color: $secondary;
+        align-items: flex-start;
+        min-width: 100%;
+        min-height: 100vh;
+        font-family: 'DM Sans', sans-serif;
+        .settings-body {
+            display: grid;
+            grid-template-columns: .25fr 1fr;
+            width: 100%;
+            .settings-main-content {
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 40px 150px 50px 0px;
+                width: 100%;
+                .settings-box {
+                	width: 60%;
+                	display: flex;
+                	flex-direction: column;
+                	align-items: flex-start;
+                	border-radius: 10px;
+                	min-height: fit-content;
+                	padding: 10px 0px 20px 40px;
+                	box-shadow:0 3px 5px rgb(0,0,0,0.16);
+                	background: white;
+                	margin-top: 50px;
+                	align-self: center;
+                	h2 {
+                		margin-bottom: 20px;
+                		display: flex;
+                		gap: 10px;
+                		align-items: center;
+                	}
+                	form {
+                		width: 100%;
+                		margin-left: 7%;
+	                	label {
+	                		width: 75%;
+	                		display: flex;
+	                		gap: 10px;
+	                		align-items: center;
+	                		justify-content: space-between;
+	                		font-size: 16px;
+	                		margin-bottom: 10px;
+	                		select {
+	                			height: 30px;
+	                			width: 55%;
+	                			text-indent: 5px;
+	                			background: transparent;
+	                			border: none;
+	                			border-bottom: solid 1px $primary;
+	                			font-size: 16px;
+	                			&:focus {
+	                				outline: none;
+	                				border-bottom: solid 2px $primary;
+	                			}
+	                			option {
+	                				border: none;
+	                			}
+	                		}
+	                		input {
+	                			height: 30px;
+	                			width: 55%;
+	                			text-indent: 5px;
+	                			border: none;
+	                			border-bottom: solid 1px $primary;
+	                			font-size: 16px;
+	                			background: transparent;
+	                			&:focus {
+	                				outline: none;
+	                				border-bottom: solid 2px $primary;
+	                			}
+	                		}
+	                	}
+	                	.settings-loading {
+	                		width: 32%;
+	                		display: flex;
+	                		align-items: center;
+	                		justify-content: space-between;
+							.save-settings {
+		                		margin-top: 10px;
+		                		margin-bottom: 10px;
+		                		min-height: fit-content;
+		                		min-width: fit-content;
+		                		padding: 8px 20px;
+		                		cursor: pointer;
+		                		font-size: 18px;
+		                		background: $primary;
+		                		color: white;
+		                		border: none;
+		                		align-content: center;
+		                		box-shadow:0 3px 5px rgb(0,0,0,0.16);
+		                	}
+		                	.setting-spinner {
+		                		animation: Loading-spin infinite 0.5s linear;
+		                	}
+	                	}
+	                	
+                	}
+                	.settings-bottom {
+                		display: flex;
+                		align-items: center;
+                		width: 67%;
+                		justify-content: space-between;
+                		text-decoration: none;
+                		color: $primary;
+                		.settings-link {
+                			color: $primary;
+                		}
+                	}
+                }
+            }
+        }
+    }
+}    
+
+@keyframes Loading-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

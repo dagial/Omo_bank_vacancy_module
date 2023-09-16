@@ -1,0 +1,29 @@
+.test{
+    margin:100px;
+}
+.displaylink {
+    text-decoration: none;
+    color: inherit;
+    .display-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        padding:8px;
+        width:150px;
+        height: 120px;
+        border-radius:10%;
+        box-shadow:2px 2px 10px rgb(0,0,0,.16);
+        .display-number{
+            font-size:1.5em;
+            font-family:"DM Sans";
+            color: #0092CB;
+            height: 25%;
+        }
+        .display-letter{
+            font-size:1.2em;
+            font-family:"Poppins";
+            height: 50%;
+        }
+    }
+}

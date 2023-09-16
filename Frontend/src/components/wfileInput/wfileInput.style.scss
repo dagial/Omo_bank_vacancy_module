@@ -1,0 +1,22 @@
+.w-fileInput-lab{
+    font-size:1em;
+    font-family:"Montserrat";
+}
+.input-block{
+    .w-fileInput-label{
+        margin-bottom:10px;
+        @extend .w-fileInput-lab
+    }
+}
+.input-flex{
+    display:flex;
+    align-items:center;
+    
+    .all-input-labels{
+        width:150px;
+        @extend .w-fileInput-lab;
+        margin-right:2em;
+        font-family:"Montserrat";
+        
+    }
+}

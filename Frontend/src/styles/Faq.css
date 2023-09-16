@@ -1,0 +1,38 @@
+.containerr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+.contb{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 800px;
+}
+.drop{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin:5px ;
+   justify-content: space-between;
+    background-color:rgb(248, 241, 241); ;
+    width: 800px;
+    border-bottom: 1px solid rgb(64, 63, 63);
+   
+}   
+.drop > h3 {
+    justify-content: flex-start;
+    align-items:flex-start;
+    text-align: start;
+    color: rgb(7, 6, 6);
+    
+}
+op{
+    justify-content: flex-start;
+    align-items:flex-start;
+    text-align: start;
+    padding:10px ;
+}
+

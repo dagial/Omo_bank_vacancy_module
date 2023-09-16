@@ -1,0 +1,87 @@
+.vacant-table-container{
+    width:860px;
+    box-shadow:2px 2px 4px rgb(0,0,0,.16),-2px -2px 4px rgb(0,0,0,.16);
+    padding:10px 10px 10px 0px;
+    box-sizing:border-box;
+    border-radius: 10px;
+    background-color: white;
+    .table-title{
+        font-family:"DM Sans";
+        font-size:1.5em;
+        margin-inline:20px;
+        margin-block:5px;
+       }
+    
+    .table-container{
+        width:850px;
+        height:400px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        &::-webkit-scrollbar{
+            width:.3em;
+            
+          
+        }
+        &::-webkit-scrollbar-track{
+            background-color: white;
+            border-block: 50%;
+            margin-block:1.25em;
+            border:1px solid black;
+            padding:.3em;
+            border-radius:100vw;
+            margin-inline:50px; 
+            
+        }
+    
+        &::-webkit-scrollbar-thumb{
+            background-color: #192030;
+            width:6em;
+            border-radius:100vw;
+            margin:5px
+        }
+        // font-family:"DM Sans";
+    .vacancy-table{
+        width:850px;
+        border-spacing:0 1px;
+        
+       
+        .table-header{
+            background-color:#FAFAFA;
+            font-size:1.1em;
+            color:#707070;
+            font-family:"Quicksand";
+            th{
+                font-weight:400;
+            }
+            .content-position {
+                padding-left: 50px;
+            }
+        }
+        .content-position{
+            display:flex;
+        }
+        .table-raw{
+            &:hover{
+                background-color:#FAFAFA;
+                cursor:pointer;
+            }
+        }
+        .table-content{
+            text-align: left;
+            padding:5px;
+            align-items: center;
+            .content-position-icon{
+                width: 40px;
+                margin-right:10px;
+            }
+            .position-days{
+                font-family:"Quicksand";
+                color:#707070;
+                font-size:.8em;
+                font-weight:300;
+            }
+           
+        }
+    }
+}
+}

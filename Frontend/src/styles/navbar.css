@@ -1,0 +1,22 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+img {
+	width: 150px;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+.nav-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-items > li {
+	list-style: none;
+	padding: 10px;
+}

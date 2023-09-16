@@ -1,0 +1,38 @@
+.input-text-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:300px;
+
+    .input{
+         width:inherit;
+         margin-top:5px;
+         height:30px;
+         border:1px solid black;
+         padding:20px 15px;
+         font-family:"Montserrat";
+         font-size:.8em;
+         color:#707070;
+         &:focus{
+            outline:none;
+            border:1px solid #0092CB;
+         }
+    }
+    // .input[type="password"]{
+    //     &:focus{
+    //         font-size:1.5em;
+    //     }
+    // }
+    .input1{
+        @extend .input;
+        border-radius:25px;
+    }
+    .input2{
+        @extend .input;
+        border-radius:10px;
+    }
+    label{
+        font-family:"Montserrat";
+        font-size:.8em;
+    }
+}

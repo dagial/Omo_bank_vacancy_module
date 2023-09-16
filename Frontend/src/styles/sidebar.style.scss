@@ -1,0 +1,62 @@
+.sidebar-container{
+    position:relative;
+    width:210px;
+    height:140vh;
+    padding:20px 0 20px 20px;
+    background-color: #181931;
+    color: white;
+    box-shadow: 1px 0px 7px 3px rgba(20,20,20,0.4);    
+    .sidebar-main-option{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        margin-top:10px;
+        .main-options{
+            margin:15px 0px 15px 15px;
+            font-size:1em;
+            font-family:"Poppins";
+            font-weight: 700;
+            cursor:pointer;
+            text-decoration: none;
+            &:hover{
+                border-right:4px solid #0092CB; 
+            }
+            .options{
+                margin-right:10px;
+            }
+            }
+        }
+    .filter-options{
+        margin-top:45%;
+        font-family:"Poppins";
+      
+        .filter-title{
+            margin-bottom:15px;
+        }
+        .filter-option{
+            font-size:.8em;
+            margin:10px 20px;
+            outline: none;
+        }
+    }
+    .sidebar-profile-container{
+        position:absolute;
+      
+       bottom:0;
+        margin-bottom:5px;
+        display:flex;
+        height:20px;
+        .profile-name{
+            margin-left:5px;
+            font-size:.7em;
+            font-family:"Poppins";
+            font-weight:700;
+            .profile-bank{
+                font-size:.6em;
+                color:#707070;
+            }
+        }
+
+    }
+    }
+    

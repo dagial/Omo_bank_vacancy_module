@@ -1,0 +1,34 @@
+
+.radio-buttons-container{
+    display:flex;
+    align-items:baseline;
+    .radio-button{
+        display:flex;
+        align-items:center;
+        margin-inline:5px;
+        input[type="radio"]{
+            display:grid;
+            place-content: center;
+            appearance: none;
+            font:inherit;
+            width:1.2em;
+            height:1.2em;
+            border:1px solid #707070;
+            border-radius:50%;
+            &::before{
+                content:'';
+                box-sizing:border-box;
+                width:.6em;
+                height:.6em;
+                border-radius: 50%;
+                transform: scale(0);
+                transition: 120ms transform ease-in-out;
+                box-shadow: inset 1em 1em #0092cb;
+            }
+            &:checked::before{
+                transform:scale(1)
+            }
+        }
+    
+    }
+}
